@@ -14,10 +14,23 @@ namespace GoogleStyleServer.Controllers
         {
             repository = _repository;  
         }
+
         [HttpGet]
-        public async Task<List<DataFormat>> getData(string searchText, int start)
+        public async Task<IActionResult> GetData(string searchText, int start)
         {
-            return await repository.GetData(searchText, start);
+            var res = await repository.GetData(searchText, start);
+            if (res != null)
+                return Ok(res);
+            return NotFound();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCountData(string searchText)
+        {
+            var res = await repository.GetCountData(searchText);
+            if (res != null)
+                return Ok(res);
+            return NotFound();
         }
     }
 }
