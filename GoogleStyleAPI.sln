@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleStyleServer", "GoogleStyleServer\GoogleStyleServer.csproj", "{0706B294-1026-49FA-B128-81DAD06A302D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleStyleAPI", "GoogleStyleServer\GoogleStyleAPI.csproj", "{0706B294-1026-49FA-B128-81DAD06A302D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{F0FC35C3-B193-40A0-9A39-8A89E402847B}"
 EndProject
